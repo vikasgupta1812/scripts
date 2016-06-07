@@ -140,3 +140,18 @@ d <- gs_title("Name of Googlesheet")
 # get worksheet 
 d <-  d %>% gs_read(ws="worksheet 1")
 ```
+
+#### How to set theme in ggplot figures. 
+
+```
+theme_set(theme_minimal(24))
+ggplot(aes(x = gender, y = age),
+      data = subset(pf, !is.na(gender))) + geom_boxplot()
+```
+
+
+- Supress warning messages from Packages 
+
+```
+suppressMessages(library(dplyr))
+```
