@@ -1,6 +1,7 @@
 
 
 #### How to remove Columns by name from data.frame
+
 ```r
 churnTrain = churnTrain[,!names(churnTrain) %in% c("state", "area_code", "account_length") ]
 churnTest = churnTest[,! names(churnTrain) %in% c("state", "area_code", "account_length") ]
